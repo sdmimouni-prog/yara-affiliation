@@ -2332,3 +2332,15 @@ td .badge {
 }
 
 .static-demo-entry { display:block; text-align:center; padding:10px 12px; margin-bottom:12px; border:1px solid #e86700; border-radius:6px; color:#b95100; font-weight:600; font-size:14px; }
+
+/* Compact desktop demo: match an 80% browser zoom without changing mobile. */
+@media (min-width: 951px) {
+  .dashboard {
+    zoom: 0.8;
+    min-height: 125dvh;
+  }
+  .dashboard .workspace {
+    min-height: 125dvh;
+    max-width: none;
+  }
+}
